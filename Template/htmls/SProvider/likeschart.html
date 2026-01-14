@@ -1,0 +1,51 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+<style>
+body{
+    background-color:#FFFFFF;
+}
+#chartContainer{
+    width:1020px;
+    height:500px;
+    margin-left:150px;
+    margin-top:40px;
+}
+</style>
+
+<div id="chartContainer"></div>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var dataPoints = [
+        {% for o in form %}
+            { y: {{ o.dcount|floatformat:2 }}, label: "{{ o.names }}" },
+        {% endfor %}
+    ];
+
+    if (dataPoints.length === 0) {
+        alert("No prediction ratio data available");
+        return;
+    }
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        theme: "light2",
+        title: {
+            text: "Air Pollution Prediction Ratio"
+        },
+        data: [{
+            type: "bar",
+            indexLabel: "{label} : {y}",
+            dataPoints: dataPoints
+        }]
+    });
+
+    chart.render();
+});
+</script>
+
+{% endblock %}

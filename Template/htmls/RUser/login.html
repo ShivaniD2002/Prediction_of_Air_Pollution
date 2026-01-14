@@ -1,0 +1,51 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            background: url("{% static 'bg.jpg' %}");
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+        }
+        .style5 {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container mt-5">
+    <h2 class="text-center text-danger">
+        <b>Prediction of Air Pollution Using Machine Learning</b>
+    </h2>
+    <hr>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Username" class="form-control" required><br>
+        <input type="password" name="password" placeholder="Password" class="form-control" required><br>
+        <button type="submit" class="btn btn-success btn-block">LOGIN</button>
+    </form>
+
+    <br>
+
+    <div class="text-center">
+        <a href="{% url 'serviceproviderlogin' %}" class="btn btn-primary">
+            SERVICE PROVIDER
+        </a>
+
+        <a href="{% url 'Register1' %}" class="btn btn-warning">
+            REGISTER
+        </a>
+    </div>
+</div>
+</body>
+</html>
