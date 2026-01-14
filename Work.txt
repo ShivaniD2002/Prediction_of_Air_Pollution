@@ -1,0 +1,44 @@
+Service Provider
+
+Login,
+Train Data Sets and View Child Birth Prediction, 
+View Train and Test Results, 
+View Predicted Air Quality/Pollution Details, 
+Find Air Quality/Pollution Prediction Ratio on Data Sets, 
+Find Air Quality/Pollution Prediction Ratio Results, 
+Download Trained Data Sets, 
+View All Remote Users.
+
+
+Remote User
+
+
+REGISTER AND LOGIN,
+PREDICT AIR POLLUTION TYPE,
+VIEW YOUR PROFILE. 
+
+
+Members
+
+Air Measured Id,
+City,
+Date,
+PM2andhalf,
+PM10,
+NO,
+NO2,
+Nox,
+NH3,
+CO,
+SO2,
+O3,
+Benzene,
+Toluene,
+Xylene,
+AQI,
+Prediction.
+
+
+
+
+
