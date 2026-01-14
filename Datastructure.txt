@@ -1,0 +1,44 @@
+Prediction of Air Pollution by using Machine Learning Algorithm
+
+IEEE Conference on Machine Learning,Issue Date:Jan.2022
+
+Prediction_of_Air_Pollution
+
+
+prediction_of_air_pollution
+
+
+Air Quality Index (AQI), Linear Regression,Python
+
+Parameters
+
+Poor
+Very Poor
+Severe
+Moderate
+Satisfactory
+Good
+
+
+air_quality_type
+
+Air Measured Id
+City
+Date
+PM2andhalf
+PM10
+NO
+NO2
+Nox
+NH3
+CO
+SO2
+O3
+Benzene
+Toluene
+Xylene
+AQI
+Prediction
+
+
+air_quality_type,air_quality_type_ratio
